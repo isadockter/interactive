@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- controls, positioned bottom left -->
+    <div id="controls">
+        <div>
+            <input type="range" id="speed" name="speed" min="1" max="10" value="5 " step="2" />
+        </div>
+        <!-- closes controls -->
+        <div id="hide">
+            <p onclick="hideControls()">hide</p>
+        </div>
+    </div>
+    <!-- opens controls -->
+    <div id="open">
+        <p onclick="openControls()">open</p>
+    </div>
+
+    <!-- particles canvas -->
+    <canvas id="canvas1"></canvas>
+
+
+    <!-- particles js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
